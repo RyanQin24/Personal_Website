@@ -105,6 +105,11 @@ body {
     }
 
     /* Experience Logos (IMAGE ONLY) Setup */
+
+    .experience_logo:hover{
+        opacity: 0.8;
+    }
+
     .experience_logo_ATS{
     width: 99px;
     height: 27px;
