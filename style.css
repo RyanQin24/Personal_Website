@@ -1,0 +1,189 @@
+body {
+
+    /* body setup */
+    display: flex;            /* enable flex layout */
+    flex-direction: column;   /* stack header, sections, footer vertically */
+    align-items: center;
+    margin: 0 30px;
+
+    /* font control for websites body */
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* text color */
+
+    /* Full-site background */
+    background-color: rgb(0, 0, 0);
+
+    /* navigation setup */
+    .nav_links{
+        display: flex;
+        gap:  30px;           /* space between links */
+        list-style: none;    /* remove bullets */
+        padding: 16px 0;   /* top/bottom space */
+    }
+
+    .nav_links li a{
+        color: white;
+        text-decoration: none;  /* removes underline */
+    }
+    
+    .nav_links li a.active{
+        color: white;
+        text-decoration: none;  /* removes underline */
+        font-weight: bold;
+    }
+
+    .nav_links li a:hover{
+        opacity: 0.8;
+    }
+
+    /* navigation background theme toggle switch setup */
+    
+
+    /* Sub-Body Setup */
+    .body {
+    width: 100%;
+    max-width: 550px;      /* or whatever width looks good */
+    margin: 0 30px auto;        /* centers the container horizontally */
+    padding-bottom: 180px;  /* ← bottom breathing room */
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;   /* items can move to next line */
+    flex-direction: column;
+    }
+
+    .body h1{
+        font-size: 24px;
+    }
+
+    .body p {
+    line-height: 1.8;  
+    }
+
+    .body p a{
+        line-height: 1.8;  /* 1.5x the normal line height */
+        color: white;
+        text-decoration: none;  /* removes underline */
+    }
+
+    .body p a:hover{
+        opacity: 0.8;
+    }
+
+    /* Contact me icons Setup */
+    .contact_icons{
+        display: flex;       
+        flex-direction: row; 
+        gap: 20px;           
+        flex-wrap: wrap;     
+    }
+
+    /* COntact me icon(IMAGE ONLY) Setup */
+    .social-icons {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    }   
+
+    .social-icons:hover {
+    opacity: 0.8;
+    }
+
+    /* Experiences div Setup */
+    .experience_body{
+        margin-top: 34px;
+    }
+
+    /* Experiences Header Setup */
+    .Title_Header{
+        display: flex;       
+        flex-direction: row; 
+        gap: 15px;  
+    }
+
+    .Title_Header h1{
+        font-size: 20px;
+    }
+
+    /* Experience Logos (IMAGE ONLY) Setup */
+    .experience_logo_ATS{
+    width: 99px;
+    height: 27px;
+    margin-top: 10px;
+    }
+
+    .experience_logo_WSP{
+    width: 70px;
+    height: 33px;
+    margin-top: 12px;
+    }
+
+    .experience_logo_MSun{
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    }
+
+    /* Experiences paragraphs Setup */
+    .experience_body p{
+        margin-top: 4px;
+    }
+
+    .experience_body p2{
+        color: rgb(171, 171, 171);
+    }
+
+    /* Projects image Setup */
+    .project-thumb {
+        width: 100%;
+        max-width: 290px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Projects div Setup */
+    .project_body{
+        margin-top: 80px;
+    }
+
+    /* Projects Header Setup */
+    .project_body h1{
+        font-size: 20px;
+    }
+
+    /* Projects paragraphs Setup */
+    .project_body p2{
+        color: rgb(171, 171, 171);
+    }
+    
+    .project_body p{
+        margin-top: 8px;
+    }
+    /* Projects link div Setup */
+    .project_links{
+        display: flex;       
+        flex-direction: row; 
+        gap: 0px 15px;  
+    }
+
+    .project_links a{
+        color: #fff;
+        text-decoration: none;  /* removes underline */
+    }
+
+    .project_links a:hover{
+         opacity: 0.8;
+    }
+
+    /* svg styling control */
+    .svg-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    transform: translate(1px,-1px);
+    filter: invert(1);
+    }
+
+
+}
+
+
