@@ -1,4 +1,21 @@
+/* Default color */
+    :root {
+        --bg-color: black;
+        --text-color: white;
+        --sub-text-color:rgb(171, 171, 171);
+        --invert: 1;
+    }
+
+/* Light Theme color */
+    [data-theme="light"]{
+        --bg-color: rgba(255, 255, 255, 0.824);
+        --text-color: black;
+        --sub-text-color:rgb(104, 104, 104);
+        --invert: 0;
+    }
+    
 body {
+    /* Theme toggle variable setup */
 
     /* body setup */
     display: flex;            /* enable flex layout */
@@ -8,10 +25,10 @@ body {
 
     /* font control for websites body */
     font-family: 'Roboto', sans-serif;
-    color: #fff; /* text color */
+    color: var(--text-color); /* text color */
 
     /* Full-site background */
-    background-color: rgb(0, 0, 0);
+    background-color: var(--bg-color);
 
     /* navigation setup */
     .nav_links{
@@ -22,13 +39,11 @@ body {
     }
 
     .nav_links li a{
-        color: white;
+        color: var(--text-color);
         text-decoration: none;  /* removes underline */
     }
     
     .nav_links li a.active{
-        color: white;
-        text-decoration: none;  /* removes underline */
         font-weight: bold;
     }
 
@@ -36,8 +51,22 @@ body {
         opacity: 0.8;
     }
 
-    /* navigation background theme toggle switch setup */
-    
+    /* navigation background theme toggle icon setup */
+    #theme_toggle{
+        background: none; 
+        border: none; 
+        padding: 0;
+    }
+
+    #theme_toggle:hover{
+        opacity: 0.8;
+    }
+
+    #theme_toggle img{
+        width: 24px; 
+        height: 24px;
+        margin-top: -2px;
+    }
 
     /* Sub-Body Setup */
     .body {
@@ -61,7 +90,7 @@ body {
 
     .body p a{
         line-height: 1.8;  /* 1.5x the normal line height */
-        color: white;
+        color: var(--text-color);
         text-decoration: none;  /* removes underline */
     }
 
@@ -134,7 +163,7 @@ body {
     }
 
     .experience_body p2{
-        color: rgb(171, 171, 171);
+        color: var(--sub-text-color);
     }
 
     /* Projects image Setup */
@@ -157,7 +186,7 @@ body {
 
     /* Projects paragraphs Setup */
     .project_body p2{
-        color: rgb(171, 171, 171);
+        color: var(--sub-text-color);
     }
     
     .project_body p{
@@ -171,7 +200,7 @@ body {
     }
 
     .project_links a{
-        color: #fff;
+        color: var(--text-color);
         text-decoration: none;  /* removes underline */
     }
 
@@ -185,7 +214,7 @@ body {
     height: 20px;
     vertical-align: middle;
     transform: translate(1px,-1px);
-    filter: invert(1);
+    filter: invert(var(--invert));
     }
 
 
