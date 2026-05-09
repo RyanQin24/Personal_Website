@@ -139,9 +139,15 @@ body {
         opacity: 0.8;
     }
 
-    .experience_logo_ATS{
+    .experience_logo_AMD{
     width: 99px;
     height: 27px;
+    margin-top: 10px;
+    }
+
+    .experience_logo_ATS{
+    width: 99px;
+    height: 30px;
     margin-top: 10px;
     }
 
